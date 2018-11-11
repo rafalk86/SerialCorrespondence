@@ -15,7 +15,7 @@ answer = MsgBox("Czy na pewno chcesz wys³aæ wiadomoœci?", vbYesNo + vbExclamatio
     If answer = 6 Then
 
         filePath = ThisWorkbook.Path
-        signature = filePath & "\" & "Coral_signature" & ".htm"
+        signature = filePath & "\" & "signature" & ".htm"
 
         lastSlot = ActiveSheet.Range("A" & ActiveSheet.Rows.Count).End(xlUp).Row
         For I = lastSlot To 2 Step -1
